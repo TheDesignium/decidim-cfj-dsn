@@ -63,6 +63,7 @@ WORKDIR $APP_HOME
 
 COPY Gemfile Gemfile.lock ./
 
+COPY memo/omniauth-cityos-dcp /app/memo/omniauth-cityos-dcp
 COPY omniauth-line_login /app/omniauth-line_login
 COPY decidim-user_extension /app/decidim-user_extension
 

@@ -7,3 +7,10 @@
           @apply fill-current;
     }
 }
+
+// CityOS uses a configurable provider label and must keep it visible on
+// narrow screens as well as desktop. Decidim core hides provider labels below
+// the 1536px breakpoint for its icon-only social buttons.
+.login__omniauth-button--cityos span {
+    display: inline !important;
+}
